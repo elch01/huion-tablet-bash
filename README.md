@@ -78,13 +78,13 @@ Take note of what "button" number it outputs into the console for each respectiv
 
 We can map the buttons using the wacom drivers.
 
-Here we need to take the device name of the "Pad" device in ```xinput``` mine is ```Tablet Monitor Pad pad``` Replace that device in 'TABLET_PAD_INPUT_DEVICE_NAME_HERE'
+Here we need to take the device name of the "Pad" device in ```xinput``` mine is ```Tablet Monitor Pad pad``` OR use the ID we saw in ```xinput``` Replace 'TABLET_PAD_INPUT_DEVICE_NAME_OR_ID_HERE'
 
 BUTTON should be what xev outputs per key on the tablet eg. ```button 3```
 
 KEY should be whatever key on the keyboard eg. ```F12```
 
-```$ xsetwacom --set 'TABLET_PAD_INPUT_DEVICE_NAME_HERE' BUTTON "key KEY"```
+```$ xsetwacom --set 'TABLET_PAD_INPUT_DEVICE_NAME_OR_ID_HERE' BUTTON "key KEY"```
 
 My example: ```$ xsetwacom --set 'Tablet Monitor Pad pad' button 3 "key F12"```
 
