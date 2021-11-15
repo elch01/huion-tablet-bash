@@ -2,8 +2,10 @@
 
 # this is my personal script, modify it to suit your system/needs!
 
+INITIAL=$(xinput | grep 'Tablet Monitor Pen stylus*')
 OUTPUT=$(echo "$INITIAL" | grep -Eo "id=.." | tr -d 'id=')
 
+INITIAL2=$(xinput | grep 'Tablet Monitor Pad*')
 OUTPUT2=$(echo "$INITIAL2" | grep -Eo "id=.." | tr -d 'id=')
 
 xrandr
